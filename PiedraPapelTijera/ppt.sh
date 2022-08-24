@@ -15,8 +15,9 @@ echo "
 ┃┏━┻┻━━┻━━┻┛┗┛┗┛ ┃┏━┻┛┗┫┏━┻━━┻━┛ ┗━━┛ ┗━┻┫┣━━┻┛┗┛┗┻━━┛
 ┃┃               ┃┃    ┃┃               ┏┛┃
 ┗┛               ┗┛    ┗┛               ┗━┛"
+sleep 4
+clear
 
-sleep 1
 echo "
           ** elige: **
           ** elige: **
@@ -28,6 +29,7 @@ echo "
 ┗━━━┛ ┗━━━┛ ┃┏━┻┻━━┻━━┻┛┗┛┗┛
             ┃┃
             ┗┛
+
  ┏┓        ┏━━━┓        ┏┓
 ┏┛┃        ┃┏━┓┃        ┃┃
 ┗┓┃  ┏━━━┓ ┃┗━┛┣━━┳━━┳━━┫┃
@@ -36,6 +38,7 @@ echo "
 ┗━━┛ ┗━━━┛ ┗┛  ┗┛┗┫┏━┻━━┻━┛
                   ┃┃
                   ┗┛
+
 ┏━━━┓        ┏┓
 ┃┏━┓┃       ┏┛┗┓┏┓
 ┗┛┏┛┃ ┏━━━┓ ┗┓┏╋╋╋━━┳━┳━━┓
@@ -45,22 +48,51 @@ echo "
                ┏┛┃
                ┗━┛"
 read opcion
-sleep 2
+sleep 1
 clear
-echo "elegiste la opccion : $opcion" 
 
-
+echo "** ELEGISTEEEEE **"
+echo "** ELEGISTEEEEE **"
+echo "** ELEGISTEEEEE **"
+sleep 1
 
 if [[ "0" = $opcion ]]
 then
-    echo "elegiste Piedra"
+    echo "
+          ┏┓                  
+          ┃┃                 
+ ┏━━┳┳━━┳━┛┣━┳━━┓
+ ┃┏┓┣┫┃━┫┏┓┃┏┫┏┓┃ 
+ ┃┗┛┃┃┃━┫┗┛┃┃┃┏┓┃ 
+ ┃┏━┻┻━━┻━━┻┛┗┛┗┛ 
+ ┃┃               
+ ┗┛"
 elif [[ "1" = $opcion ]]
 then
-    echo "elegiste Papel"
+    echo "
+            ┏┓
+            ┃┃
+┏━━┳━━┳━━┳━━┫┃
+┃┏┓┃┏┓┃┏┓┃┃━┫┃
+┃┗┛┃┏┓┃┗┛┃┃━┫┗┓
+┃┏━┻┛┗┫┏━┻━━┻━┛
+┃┃    ┃┃
+┗┛    ┗┛
+"
 else
-    echo "elegiste tijera"
+    echo "   
+  ┏┓
+ ┏┛┗┓┏┓
+ ┗┓┏╋╋╋━━┳━┳━━┳━━┓
+  ┃┃┣╋┫┃━┫┏┫┏┓┃━━┫
+  ┃┗┫┃┃┃━┫┃┃┏┓┣━━┃
+  ┗━┻┫┣━━┻┛┗┛┗┻━━┛
+    ┏┛┃
+    ┗━┛
+"
 fi
 
+sleep 5
 echo "La PC eligira un numero aleatorio entre 0 y 2"
 echo "Donde 0 = piedra , 1 = papel , 2 = tijeras."
 pc=$(($RANDOM%3))
