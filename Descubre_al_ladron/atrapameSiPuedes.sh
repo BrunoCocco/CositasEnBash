@@ -26,7 +26,10 @@ echo "
     Hola -
     
         - Hola Seriff, Soy su pequeño amigo, creo que puede hacerse la idea.
-        estoy por la ciudad, y quiero
+        estoy por la ciudad y necesito tu ayuda, la policia me pisa los talones -
+    "
+sleep 1
 
-    No tengo idea quien eres, gracias por llamar -
+echo "
+    Mi policia tiene orden de atraparte si te ve, estoy de brazos cruzados.!
 "
