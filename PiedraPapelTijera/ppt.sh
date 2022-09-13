@@ -196,3 +196,4 @@ fi
 # else
 #     echo "Pc elege tijera"
 # fi
+....
