@@ -17,3 +17,16 @@ sleep 2
 echo "operadores Relacionales"
 echo "Numeros a=$numA y b=$numB"
 echo "A > B =" $((numA < numB))
+echo "A > B =" $((numA > numB))
+echo "A >= B =" $((numA <= numB))
+echo "A >= B =" $((numA <= numB))
+echo "A = B =" $((numA == numB))
+echo "A >= B =" $((numA != numB))
+
+sleep 2
+echo "Operadores de asignacion"
+echo "Numeros: a=$numA y b=$numB"
+echo "Sumar A += B" $((numA += numB))
+echo "restar A -= B" $((numA -= numB))
+echo "multiplicar A *= B" $((numA *= numB))
+echo "Sumar A /= B" $((numA /= numB))
