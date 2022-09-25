@@ -18,6 +18,7 @@ echo "
 sleep 4
 clear
 
+
 echo "
             ** elige: **
             ** elige: **
